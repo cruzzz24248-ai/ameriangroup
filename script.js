@@ -187,11 +187,12 @@
   /* ---------- Solo con mouse: cursor, botones imán, foco de luz ---------- */
   if (fine && !reduce) {
     const cur = document.createElement('div'); cur.className = 'cursor'; document.body.append(cur);
+    const hoverScale = parseFloat(getComputedStyle(root).getPropertyValue('--cursor-hover')) || 1.8;
     let px = -100, py = -100, cx = px, cy = py, s = 1, ts = 1;
     addEventListener('pointermove', e => {
       px = e.clientX; py = e.clientY; cur.classList.add('on');
       const hit = e.target.closest('a,button,summary,input,textarea,label');
-      ts = hit ? 1.9 : 1; cur.classList.toggle('big', !!hit);
+      ts = hit ? hoverScale : 1; cur.classList.toggle('big', !!hit);
       const t = e.target.closest('.card,blockquote,form,.svc');
       if (t) { const r = t.getBoundingClientRect(); t.style.setProperty('--sx', e.clientX - r.left + 'px'); t.style.setProperty('--sy', e.clientY - r.top + 'px'); }
     });

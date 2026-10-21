@@ -2,8 +2,10 @@
    --logo-h     = altura de cada logo (subí o bajá este número)
    --logo-max-w = ancho máximo (evita que logos muy anchos se pasen)
    --logo-gap   = espacio entre logos
-   Primero van los valores de computadora, después los de celular. */
-:root{--logo-h:64px;--logo-max-w:240px;--logo-gap:90px}
+   Primero van los valores de computadora, después los de celular.
+   --cursor-size  = diámetro del círculo del cursor (solo computadora)
+   --cursor-hover = cuánto se agranda sobre botones y enlaces (1 = no se agranda) */
+:root{--logo-h:64px;--logo-max-w:240px;--logo-gap:90px;--cursor-size:16px;--cursor-hover:1.8}
 @media(max-width:900px){:root{--logo-h:44px;--logo-max-w:170px;--logo-gap:56px}}
 
 :root{color-scheme:light;--brand:#D00481;--bg:#fff;--bg2:#f4f4f5;--ink:#0a0a0a;--mute:#5d5d63;--line:#e4e4e7;--dark:#0e0e10;--r:22px}
@@ -226,7 +228,7 @@ input:focus,textarea:focus{box-shadow:0 0 0 4px color-mix(in srgb,var(--brand) 1
 /* Espacios de logos vacíos */
 .lg.slot{width:calc(var(--logo-h)*3.4);height:var(--logo-h);border:1px dashed var(--line);border-radius:12px;opacity:1}
 /* Cursor personalizado (solo con mouse) */
-.cursor{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1.5px solid #fff;border-radius:50%;pointer-events:none;z-index:300;mix-blend-mode:difference;opacity:0;transition:opacity .3s,background .3s}
+.cursor{position:fixed;left:0;top:0;width:var(--cursor-size);height:var(--cursor-size);margin:calc(var(--cursor-size)/-2) 0 0 calc(var(--cursor-size)/-2);border:1.5px solid #fff;border-radius:50%;pointer-events:none;z-index:300;mix-blend-mode:difference;opacity:0;transition:opacity .3s,background .3s}
 .cursor.on{opacity:1}.cursor.big{background:#fff}
 @media(hover:hover) and (pointer:fine){.cursor{display:block}}
 @media(hover:none),(pointer:coarse){.cursor{display:none}}
