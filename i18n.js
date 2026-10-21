@@ -16,6 +16,7 @@ window.EN = {
 "s2t":"Brand and communication","s2d":"Identity, tone of voice and content that make your brand recognizable and memorable at every touchpoint.",
 "s3t":"Digital marketing","s3d":"Social, ads and results-driven campaigns, with clear reports on what works and what doesn't.",
 "s4t":"Digital transformation","s4d":"Web, automation and AI applied to your company's day to day to save time and sell better.",
+"s1a":"Diagnosis","s1b":"Positioning","s1c":"Action plan","s2a":"Identity","s2b":"Tone of voice","s2c":"Content","s3a":"Social media","s3b":"Paid ads","s3c":"Reporting","s4a":"Web","s4b":"Automation","s4c":"AI","sr.loc":"Location: ",
 "c.h":"Brands growing with us","c.p":"Companies that trusted us with their strategy and now move forward with more clarity.",
 "c.img":"Case photo","c.name":"Brand name","c.cat":"Service · Industry",
 "c.next":"Could you be next?","c.add":"Add your brand",

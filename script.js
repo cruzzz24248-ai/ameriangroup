@@ -37,8 +37,8 @@
   // Datos de contacto y clientes
   $$('[data-wa]').forEach(a => a.href = `https://wa.me/${CONFIG.whatsapp}`);
   $$('[data-wa-label]').forEach(s => s.textContent = CONFIG.whatsappLabel);
-  $$('[data-mail]').forEach(a => { a.href = `mailto:${CONFIG.email}`; a.textContent = CONFIG.email; });
-  $$('[data-ig]').forEach(a => { a.href = `https://instagram.com/${CONFIG.instagram}`; a.textContent = `Instagram @${CONFIG.instagram}`; });
+  $$('[data-mail]').forEach(a => { a.href = `mailto:${CONFIG.email}`; $('.lbl', a).textContent = CONFIG.email; });
+  $$('[data-ig]').forEach(a => { a.href = `https://instagram.com/${CONFIG.instagram}`; $('.lbl', a).textContent = `@${CONFIG.instagram}`; });
   const logos = CONFIG.clientes.map(c => `<span class="lg${c.logo || c.name || c.inline ? '' : ' slot'}">${c.inline && window.LOGOS && window.LOGOS[c.inline] ? window.LOGOS[c.inline] : c.logo ? `<img src="${c.logo}" alt="${c.name}" loading="lazy">` : (c.name || '')}</span>`).join('');
   $('#clients').innerHTML = `<div>${logos}${logos}</div>`;
 
@@ -192,7 +192,7 @@
       px = e.clientX; py = e.clientY; cur.classList.add('on');
       const hit = e.target.closest('a,button,summary,input,textarea,label');
       ts = hit ? 1.9 : 1; cur.classList.toggle('big', !!hit);
-      const t = e.target.closest('.card,blockquote,form');
+      const t = e.target.closest('.card,blockquote,form,.svc');
       if (t) { const r = t.getBoundingClientRect(); t.style.setProperty('--sx', e.clientX - r.left + 'px'); t.style.setProperty('--sy', e.clientY - r.top + 'px'); }
     });
     root.addEventListener('mouseleave', () => cur.classList.remove('on'));
