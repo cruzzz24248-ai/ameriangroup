@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<title data-i18n="title">Amerian | Marketing & Transformación Empresarial</title>
+<meta name="description" content="Agencia estratégica joven en Argentina y USA. Consultoría, comunicación y transformación digital para empresas que quieren ir más allá.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amerian | Marketing & Transformación Empresarial">
+<meta property="og:description" content="Estrategia, creatividad y tecnología para empresas que buscan ir más allá.">
+<!-- Vista previa al compartir (WhatsApp, redes). IMPORTANTE: cambiá ameriangroup.com por el dominio real y subí img/og.jpg al hosting -->
+<meta property="og:image" content="https://ameriangroup.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Amerian: no hacemos más de lo mismo">
+<meta property="og:url" content="https://ameriangroup.com/">
+<meta property="og:site_name" content="Amerian">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ameriangroup.com/img/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='301 300 960 960'%3E%3Crect x='301' y='300' width='960' height='960' rx='200' fill='%230a0a0a'/%3E%3Cpath d='M402 634H506A420 420 0 0 1 926 1054V1156' fill='none' stroke='%23fff' stroke-width='178'/%3E%3Ccircle cx='1039' cy='526' r='121.5' fill='%23D00481'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Amerian","url":"https://ameriangroup.com","sameAs":["https://instagram.com/amerian.group"],"description":"Agencia de marketing y transformación empresarial."}</script>
+<script>/* Tema e idioma antes de pintar, para evitar parpadeos */
+(function(){try{var d=document.documentElement,t=localStorage.getItem('theme');
+if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.dataset.theme=t;d.classList.add('js');
+var l=localStorage.getItem('lang')||((navigator.language||'es').slice(0,2)==='en'?'en':'es');d.lang=l}catch(e){}})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="intro" id="intro" aria-hidden="true"><svg viewBox="402 405 759 752" width="84" height="84"><path class="ia" d="M402 634H506A420 420 0 0 1 926 1054V1156" pathLength="1" fill="none" stroke="currentColor" stroke-width="178"/><circle class="id" cx="1039" cy="526" r="121.5" fill="var(--brand)"/></svg></div>
+<a class="skip" href="#nosotros" data-i18n="skip">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <a href="#inicio" class="logo" aria-label="Amerian">
+    <svg viewBox="402 405 759 752" width="28" height="28" aria-hidden="true"><path d="M402 634H506A420 420 0 0 1 926 1054V1156" fill="none" stroke="currentColor" stroke-width="178"/><circle cx="1039" cy="526" r="121.5" fill="var(--brand)"/></svg>
+    <span>AMERIAN</span>
+  </a>
+  <nav class="links" aria-label="Principal">
+    <a href="#nosotros" data-i18n="n.about">Nosotros</a><a href="#servicios" data-i18n="n.services">Servicios</a><a href="#casos" data-i18n="n.cases">Casos</a><a href="#metodo" data-i18n="n.method">Método</a><a href="#equipo" data-i18n="n.team">Equipo</a><a href="#faq" data-i18n="n.faq">Preguntas</a><i class="ind" aria-hidden="true"></i>
+  </nav>
+  <div class="nav-actions">
+    <div class="seg" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" lang="es" aria-label="Español">ES</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+    </div>
+    <button type="button" class="icon-btn" id="theme" data-theme-toggle aria-label="Cambiar tema">
+      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <a href="#contacto" class="btn sm" data-i18n="cta.talk">Hablemos</a>
+    <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlay" aria-label="Abrir menú"><i></i><i></i></button>
+  </div>
+  <i class="progress" id="progress"></i>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true" inert>
+  <div class="panel">
+    <nav aria-label="Menú">
+      <a href="#nosotros"><span data-i18n="n.about">Nosotros</span><u>↗</u></a>
+      <a href="#servicios"><span data-i18n="n.services">Servicios</span><u>↗</u></a>
+      <a href="#casos"><span data-i18n="n.cases">Casos</span><u>↗</u></a>
+      <a href="#metodo"><span data-i18n="n.method">Método</span><u>↗</u></a>
+      <a href="#equipo"><span data-i18n="n.team">Equipo</span><u>↗</u></a>
+      <a href="#faq"><span data-i18n="n.faq">Preguntas</span><u>↗</u></a>
+    </nav>
+    <button type="button" class="theme-row" data-theme-toggle>
+      <span data-theme-label></span>
+      <span class="icon-btn" aria-hidden="true"><svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+    </button>
+    <a href="#contacto" class="btn" data-i18n="cta.talk2">Hablemos de tu proyecto</a>
+  </div>
+</div>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"><div class="hb-grid"></div><svg class="hb-rings" viewBox="0 0 800 800"><circle cx="400" cy="400" r="340"/><circle cx="400" cy="400" r="340"/><circle cx="400" cy="400" r="340"/></svg></div>
+  <div class="wrap hero-grid">
+  <div class="hero-copy">
+    <p class="tag" data-i18n="h.tag">Marketing y transformación empresarial</p>
+    <h1><span data-i18n="h.l1">No hacemos</span> <span data-i18n="h.l2">más de lo</span> <span class="pink" data-i18n="h.l3">mismo.</span></h1>
+    <p class="lead" data-i18n="h.lead">Estrategia, creatividad y tecnología para empresas que buscan ir más allá. Desde Argentina y USA, para todo el mundo.</p>
+    <div class="cta-row">
+      <a href="#contacto" class="btn"><span data-i18n="h.cta">Hablemos de tu proyecto</span></a>
+      <a href="#casos" class="btn ghost" data-i18n="h.cases">Ver casos</a>
+    </div>
+  </div>
+  <div class="hero-art" id="art" aria-hidden="true">
+    <svg viewBox="402 405 759 752"><path class="arc" d="M402 634H506A420 420 0 0 1 926 1054V1156" pathLength="1"/><circle class="dot" id="dot" cx="1039" cy="526" r="121.5"/></svg>
+    <span class="chip c1" data-i18n="h.chip">+3 años</span><span class="chip c2">Argentina · USA</span>
+  </div>
+</div></section>
+
+<!-- Logos de clientes: se completan en script.js (CONFIG.clientes) -->
+<section class="trust" aria-label="Clientes"><div class="marquee" id="clients" aria-hidden="true"></div></section>
+
+<section class="sec reveal" id="nosotros"><div class="wrap statement">
+  <h2 data-i18n="a.h">No se trata de hacer más. Se trata de hacer que <em>cada acción tenga sentido.</em></h2>
+  <div>
+    <p class="mute" data-i18n="a.p">Somos una agencia de marketing estratégico que combina análisis, creatividad y tecnología para impulsar el crecimiento real de las marcas.</p>
+    <dl class="facts" data-stagger>
+      <div><dt data-count="3">3</dt><dd data-i18n="a.f1">años impulsando empresas</dd></div>
+      <div><dt data-count="2">2</dt><dd data-i18n="a.f2">países, un mismo equipo</dd></div>
+      <div><dt data-count="4">4</dt><dd data-i18n="a.f3">áreas integradas</dd></div>
+    </dl>
+  </div>
+</div></section>
+
+<section class="sec reveal" id="servicios"><div class="wrap services">
+  <div class="sticky"><h2 data-i18n="s.h">Qué hacemos</h2><p class="mute" data-i18n="s.p">Cuatro áreas que trabajan juntas, no por separado.</p><a href="#contacto" class="btn ghost" data-i18n="s.cta">Contanos qué necesitás</a></div>
+  <ul class="acc">
+    <li class="open"><button type="button" aria-expanded="true"><span data-i18n="s1t">Estrategia y consultoría</span><i></i></button><div><p data-i18n="s1d">Diagnóstico del negocio, posicionamiento y plan de acción con objetivos medibles. Antes de ejecutar, entendemos.</p></div></li>
+    <li><button type="button" aria-expanded="false"><span data-i18n="s2t">Marca y comunicación</span><i></i></button><div><p data-i18n="s2d">Identidad, tono de voz y contenido que hacen que tu marca se reconozca y se recuerde en cada punto de contacto.</p></div></li>
+    <li><button type="button" aria-expanded="false"><span data-i18n="s3t">Marketing digital</span><i></i></button><div><p data-i18n="s3d">Redes, pauta y campañas orientadas a resultados, con reportes claros de lo que funciona y lo que no.</p></div></li>
+    <li><button type="button" aria-expanded="false"><span data-i18n="s4t">Transformación digital</span><i></i></button><div><p data-i18n="s4d">Web, automatizaciones e IA aplicadas al día a día de tu empresa para ahorrar tiempo y vender mejor.</p></div></li>
+  </ul>
+</div></section>
+
+<section class="sec reveal" id="casos"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="c.h">Marcas que crecen con nosotros</h2><p class="mute" data-i18n="c.p">Empresas que nos confiaron su estrategia y hoy avanzan con más claridad.</p></div>
+  <!-- Casos: reemplazá cada .vis por <img class="vis" src="img/casos/nombre.jpg" alt="..."> y completá marca y servicio -->
+  <div class="grid" data-stagger>
+    <a href="#contacto" class="card tall"><div class="vis v3"><span data-i18n="c.img">Foto del caso</span></div><div class="meta"><b data-i18n="c.name">Nombre de la marca</b><span data-i18n="c.cat">Servicio · Rubro</span></div></a>
+    <a href="#contacto" class="card"><div class="vis v3"><span data-i18n="c.img">Foto del caso</span></div><div class="meta"><b data-i18n="c.name">Nombre de la marca</b><span data-i18n="c.cat">Servicio · Rubro</span></div></a>
+    <a href="#contacto" class="card"><div class="vis v3"><span data-i18n="c.img">Foto del caso</span></div><div class="meta"><b data-i18n="c.name">Nombre de la marca</b><span data-i18n="c.cat">Servicio · Rubro</span></div></a>
+    <a href="#contacto" class="card all"><span data-i18n="c.next">¿La próxima sos vos?</span><b data-i18n="c.add">Sumá tu marca</b></a>
+  </div>
+</div></section>
+
+<section class="band reveal" id="metodo"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="m.h">Cómo trabajamos</h2><p data-i18n="m.p">Un proceso simple, de la idea a los resultados.</p></div>
+  <ol class="steps" data-stagger>
+    <li><b>1</b><h3 data-i18n="m1t">Entender</h3><p data-i18n="m1d">Análisis y diagnóstico de tu negocio.</p></li>
+    <li><b>2</b><h3 data-i18n="m2t">Definir</h3><p data-i18n="m2d">Estrategia y planificación.</p></li>
+    <li><b>3</b><h3 data-i18n="m3t">Ejecutar</h3><p data-i18n="m3d">Creatividad y desarrollo.</p></li>
+    <li><b>4</b><h3 data-i18n="m4t">Optimizar</h3><p data-i18n="m4d">Medición y crecimiento.</p></li>
+  </ol>
+</div></section>
+
+<section class="sec reveal"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="q.h">Lo que dicen de nosotros</h2><p class="mute" data-i18n="q.p">Reemplazá estos textos con testimonios reales de tus clientes.</p></div>
+  <div class="quotes" data-stagger>
+    <blockquote><p data-i18n="q1">“Acá va el testimonio de un cliente: qué problema tenía, qué hicieron juntos y qué cambió en su negocio.”</p><footer data-i18n="q.by">Nombre · Empresa</footer></blockquote>
+    <blockquote><p data-i18n="q2">“Un segundo testimonio, corto y concreto. Lo ideal es mencionar un resultado puntual.”</p><footer data-i18n="q.by">Nombre · Empresa</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="sec reveal" id="equipo"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="t.h">Personas reales, ideas grandes.</h2><p class="mute" data-i18n="t.p">Un equipo joven y multidisciplinario. Reemplazá estos espacios con las fotos del equipo.</p></div>
+  <!-- Para cada persona: reemplazá <div class="ph">N</div> por <img class="ph" src="img/equipo/nombre.jpg" alt="Nombre"> -->
+  <div class="people" data-stagger>
+    <figure><div class="ph">N</div><figcaption><b data-i18n="t.name">Nombre Apellido</b><span data-i18n="t.r1">Dirección estratégica</span></figcaption></figure>
+    <figure><div class="ph">N</div><figcaption><b data-i18n="t.name">Nombre Apellido</b><span data-i18n="t.r2">Creatividad y diseño</span></figcaption></figure>
+    <figure><div class="ph">N</div><figcaption><b data-i18n="t.name">Nombre Apellido</b><span data-i18n="t.r3">Marketing digital</span></figcaption></figure>
+    <figure><div class="ph">N</div><figcaption><b data-i18n="t.name">Nombre Apellido</b><span data-i18n="t.r4">Tecnología</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section class="sec reveal" id="faq"><div class="wrap faq">
+  <h2 data-i18n="f.h">Preguntas frecuentes</h2>
+  <div>
+    <details><summary data-i18n="f1q">¿Con qué tipo de empresas trabajan?</summary><p data-i18n="f1a">Con empresas y marcas de distintos rubros que quieren ordenar su estrategia, comunicar mejor y crecer con método.</p></details>
+    <details><summary data-i18n="f2q">¿Trabajan con clientes fuera de Argentina?</summary><p data-i18n="f2a">Sí. Somos un equipo con presencia en Argentina y USA, y trabajamos de forma remota con marcas de cualquier lugar.</p></details>
+    <details><summary data-i18n="f3q">¿Se puede contratar un solo servicio?</summary><p data-i18n="f3a">Sí, aunque los mejores resultados llegan cuando estrategia, marca y digital trabajan integrados. Lo definimos juntos en la primera charla.</p></details>
+    <details><summary data-i18n="f4q">¿Cómo empezamos?</summary><p data-i18n="f4a">Nos escribís, hacemos una primera conversación para entender tu negocio y te proponemos un plan de trabajo.</p></details>
+  </div>
+</div></section>
+
+<section class="sec reveal" id="contacto"><div class="wrap contact">
+  <div>
+    <h2 data-i18n="ct.h">Hagamos que algo <span class="pink">pase.</span></h2>
+    <p class="mute" data-i18n="ct.p">Si tenés un proyecto en mente o querés conocer más sobre lo que hacemos, estamos para ayudarte.</p>
+    <ul class="channels">
+      <li><a data-wa target="_blank" rel="noopener">WhatsApp: <span data-wa-label></span></a></li>
+      <li><a data-mail></a></li>
+      <li><span data-i18n="ct.loc">Córdoba, Argentina</span></li>
+      <li><a data-ig target="_blank" rel="noopener"></a></li>
+    </ul>
+  </div>
+  <form id="form" novalidate>
+    <label><span data-i18n="l.name">Nombre</span><input name="nombre" required autocomplete="name"></label>
+    <label><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+    <label><span data-i18n="l.msg">Contanos tu proyecto</span><textarea name="mensaje" rows="4" required></textarea></label>
+    <button class="btn" type="submit"><span data-i18n="l.send">Enviar por WhatsApp</span></button>
+    <p class="note" id="note" role="status"></p>
+  </form>
+</div></section>
+</main>
+
+<a class="wa" id="waFloat" data-wa target="_blank" rel="noopener"><i></i><span data-i18n="wa">Escribinos</span></a>
+
+<footer><div class="wrap foot">
+  <a href="#inicio" class="logo"><svg viewBox="402 405 759 752" width="24" height="24" aria-hidden="true"><path d="M402 634H506A420 420 0 0 1 926 1054V1156" fill="none" stroke="currentColor" stroke-width="178"/><circle cx="1039" cy="526" r="121.5" fill="var(--brand)"/></svg><span>AMERIAN</span></a>
+  <p data-i18n="ft.tag">Estrategia, creatividad y crecimiento.</p>
+  <small data-i18n="ft.rights">© 2026 Amerian Group. Todos los derechos reservados.</small>
+</div></footer>
+
+<script src="i18n.js"></script>
+<script src="logos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
